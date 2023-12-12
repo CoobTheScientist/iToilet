@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Address -->
+
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:hint="123 N Main st Chicago IL 60601" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Location" />
+
+        <EditText
+            android:id="@+id/genderType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Gender Type (M/F)" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Overall Rating:" />
+
+        <RatingBar
+            android:id="@+id/overall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cleanliness Rating:" />
+
+        <RatingBar
+            android:id="@+id/cleanliness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toilet Paper Rating:" />
+
+        <RatingBar
+            android:id="@+id/toiletPaper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0" />
+
+        <RadioGroup
+            android:id="@+id/handicap"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Handicap Accessibility?" />
+
+            <RadioButton
+                android:id="@+id/yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/changingStation"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baby changing station?" />
+
+            <RadioButton
+                android:id="@+id/yes2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:layout_marginTop="1dp"/>
+
+            <RadioButton
+                android:id="@+id/no2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:layout_marginTop="0dp"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/dryingHands"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Method of drying hands?" />
+
+            <RadioButton
+                android:id="@+id/towels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paper Towels" />
+
+            <RadioButton
+                android:id="@+id/air"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Air Dryer" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#195A8E"
+            android:text="Add Bathroom" />
+
+
+    <!-- Location -->
+
+    <!-- Gender Type -->
+
+    <!-- Overall Rating -->
+
+    <!-- Subcategory Ratings -->
+
+    <!-- Handicap Accessibility -->
+
+    <!-- Baby Changing Station -->
+
+    <!-- Add Bathroom Button -->
+
+    </LinearLayout>
+</ScrollView>

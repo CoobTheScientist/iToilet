@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewReviews"
+        android:layout_width="match_parent"
+        android:layout_height="554dp"
+        android:layout_above="@+id/deleteReviewBtn"
+        android:layout_marginBottom="43dp" />
+
+    <Button
+        android:id="@+id/deleteReviewBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="83dp"
+        android:backgroundTint="#195A8E"
+        android:text="Delete Review"
+        android:layout_marginStart="120dp"
+        android:textSize="18sp" />
+
+</RelativeLayout>

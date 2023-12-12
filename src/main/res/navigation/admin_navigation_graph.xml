@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/admin_nav_graph"
+    app:startDestination="@id/adminHome">
+
+    <fragment
+        android:id="@+id/adminHome"
+        android:name="com.example.itoiletmobileapp.AdminHomeFragment"
+        android:label="fragment_admin_home"
+        tools:layout="@layout/fragment_admin_home" />
+    <fragment
+        android:id="@+id/adminSettings"
+        android:name="com.example.itoiletmobileapp.AdminSettingsFragment"
+        android:label="fragment_admin_settings"
+        tools:layout="@layout/fragment_admin_settings" />
+    <fragment
+        android:id="@+id/adminChangePasswordFragment"
+        android:name="com.example.itoiletmobileapp.AdminChangePasswordFragment"
+        android:label="fragment_admin_change_password"
+        tools:layout="@layout/fragment_admin_change_password" />
+
+    <action
+        android:id="@+id/action_adminSettingsFragment_to_adminChangePasswordFragment"
+        app:destination="@+id/adminChangePasswordFragment" />
+
+    <fragment
+        android:id="@+id/adminUsers"
+        android:name="com.example.itoiletmobileapp.AdminUsersFragment"
+        android:label="fragment_admin_users"
+        tools:layout="@layout/fragment_admin_users" />
+    <fragment
+        android:id="@+id/adminBathrooms"
+        android:name="com.example.itoiletmobileapp.AdminBathroomFragment"
+        android:label="fragment_admin_bathrooms"
+        tools:layout="@layout/fragment_admin_bathroom" />
+    <!--<fragment
+        android:id="@+id/adminReviews"
+        android:name="com.example.itoiletmobileapp.AdminReviewFragment"
+        android:label="fragment_admin_review"
+        tools:layout="@layout/fragment_admin_review" />-->
+
+</navigation>

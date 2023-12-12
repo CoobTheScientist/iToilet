@@ -1,0 +1,48 @@
+<!-- navigation_graph.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.itoiletmobileapp.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/changeEmailFragment"
+        android:name="com.example.itoiletmobileapp.ChangeEmailFragment"
+        android:label="fragment_change_email"
+        tools:layout="@layout/fragment_change_email" />
+
+    <action
+        android:id="@+id/action_settingsFragment_to_changeEmailFragment"
+        app:destination="@+id/changeEmailFragment" />
+
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.example.itoiletmobileapp.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" />
+
+    <action
+        android:id="@+id/action_settingsFragment_to_changePasswordFragment"
+        app:destination="@+id/changePasswordFragment" />
+
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.itoiletmobileapp.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/addBathroom"
+        android:name="com.example.itoiletmobileapp.AddBathroomFragment"
+        android:label="fragment_add_bathroom"
+        tools:layout="@layout/fragment_add_bathroom" />
+
+
+</navigation>

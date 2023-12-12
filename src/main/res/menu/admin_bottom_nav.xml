@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/adminSettings"
+        android:title="Settings"
+        />
+    <item
+        android:id="@+id/adminUsers"
+        android:title="Users"
+        />
+    <item
+        android:id="@+id/adminHome"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/adminBathrooms"
+        android:title="Bathrooms"
+        />
+<!--    <item
+        android:id="@+id/adminReviews"
+        android:title="Reviews"
+        />-->
+</menu>
