@@ -86,7 +86,7 @@ public class GeoCode extends AsyncTask<String, Void, LatLng> {
 
     //google api key
     private String getKey(){
-        return "AIzaSyAoS8qrfTY9wUqZvOu3nU7wYnBKzFVDLyA";
+        return *REFERENCE API KEY HERE*;
     }
 
     //make json object and get latitude and longitude
