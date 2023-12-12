@@ -346,7 +346,7 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Google
     }
     //method to get api key for url
     private String getKey(){
-        return "AIzaSyAoS8qrfTY9wUqZvOu3nU7wYnBKzFVDLyA";
+        return *REFERENCE API KEY HERE*;
     }
 
     //embedded class to get directions from google maps directions api
